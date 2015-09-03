@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head><title>Routing in Angular</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="scripts/angular.js"></script>
+  <script src="scripts/angular-route.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="contacts/contacts-service.js"></script>
+  <script src="utils/contacts-cache.js"></script>
+  <script src="utils/utils-service.js"></script>
+<style type="text/css">
+div#container {
+width: 500px;
+height: 500px;
+background-color: transparent;
+position: absolute;
+top:0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+}
+</style>
+</head>
+
+<body ng-app="myApp">
+<div id="container">
+   <ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="#Home">Home</a></li>
+    <li role="presentation"><a href="#About">About</a></li>
+    <li role="presentation"><a href="#Contact">Contact</a></li>
+  </ul>
+    <div ng-view>
+   </div>
+   </div>
+</body>
+</html>
